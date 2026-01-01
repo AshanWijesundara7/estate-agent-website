@@ -1,35 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavBar from "./components/Navbar/NavBar";
+import Properties from "./components/properties_page/Properties";
+import Property from "./components/properties_page/Property";
+import Favorites from "./components/properties_page/Favorites"; 
+import { FavoriteProvider } from "./components/properties_page/FavoriteContext";
+import Footer from "./components/Navbar/Footer";
+import Home from "./components/HomePage"; 
+import AboutUs from "./components/aboutus_page/Aboutus"; 
+import Contact from "./components/ContactUs/Contact"; 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <BrowserRouter>
+      <FavoriteProvider>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/properties_page" element={<Properties />} />
+          <Route path="/properties/:id" element={<Property />} />
+          <Route path="/favorites" element={<Favorites />} /> 
+          <Route path="/aboutus_page" element={<AboutUs />} /> 
+          <Route path="/contactus" element={<Contact />} /> 
+        </Routes>
+        <Footer />
+      </FavoriteProvider>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
