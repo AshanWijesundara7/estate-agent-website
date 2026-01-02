@@ -32,3 +32,24 @@
   font-weight: 600;
   color: #e5e7eb;
 }
+
+.footer-text{
+    font-size: 0.9rem;
+    color: #d1d5db;
+    line-height: 1.6;
+}
+
+.footer-link{
+    background: none;
+    border: none;
+    color: #d1d5db;
+    cursor: pointer;
+    text-align: left;
+    padding: 0.25rem 0;
+    transition: color 0.3s;
+    font-size: 0.9rem;
+}
+
+.footer-link:hover {
+  color: #60a5fa;
+}
