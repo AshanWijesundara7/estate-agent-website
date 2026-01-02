@@ -9,7 +9,7 @@ const Homepage = () => {
     <>
       <section className="hero-section">
         <div className="hero-content">
-          <h1>Find Your Dream Home Today!</h1>
+          <h1>Find Your Dream Home!</h1>
           <p>Discover properties that match your lifestyle and needs.</p>
           <button onClick={() => navigate("/properties_page")}>Buy</button>
         </div>
