@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './properties.css';
+import './Properties.css';
 
 // Import local JSON data
-import propertiesData from './properties.json';
+import propertiesData from '../../data/properties.json';
+
 
 const Properties = () => {
   const navigate = useNavigate();
