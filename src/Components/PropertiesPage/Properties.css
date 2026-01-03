@@ -1,3 +1,9 @@
+/* ========================================
+   5COSC026W Properties Search & Results
+   Estate Agent SPA Stylesheet
+   ======================================== */
+
+/* CSS Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +37,9 @@ body {
   line-height: 1.6;
 }
 
-/* Header Section */
+/* ========================================
+   Header Section
+   ======================================== */
 .properties-header {
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
   color: white;
@@ -52,7 +60,9 @@ body {
   opacity: 0.9;
 }
 
-/* Main Container Layout */
+/* ========================================
+   Main Container Layout
+   ======================================== */
 .properties-container {
   min-height: 100vh;
 }
@@ -65,7 +75,9 @@ body {
   gap: 2rem;
 }
 
-/*Search Sidebar (Left Column) */
+/* ========================================
+   Search Sidebar (Left Column)
+   ======================================== */
 .search-sidebar {
   flex: 0 0 320px;
   display: flex;
@@ -89,7 +101,9 @@ body {
   padding-bottom: 0.5rem;
 }
 
-/* Form Styling*/
+/* ========================================
+   Form Styling
+   ======================================== */
 .search-form {
   display: flex;
   flex-direction: column;
@@ -209,7 +223,9 @@ body {
   background: #e9ecef;
 }
 
-/*Favourites Preview Sidebar*/
+/* ========================================
+   Favourites Preview Sidebar
+   ======================================== */
 .favourites-preview {
   background: var(--background-white);
   border-radius: 8px;
@@ -217,11 +233,34 @@ body {
   box-shadow: var(--shadow-md);
 }
 
+.favourites-preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
 .favourites-preview h3 {
   font-size: 1.25rem;
-  margin-bottom: 1rem;
   color: var(--primary-color);
   font-family: var(--font-secondary);
+}
+
+.btn-view-all {
+  background: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-view-all:hover {
+  background: #2980b9;
+  transform: translateY(-1px);
 }
 
 .no-favourites {
@@ -282,7 +321,17 @@ body {
   transform: scale(1.2);
 }
 
-/* Results Section (Main Content) */
+.more-favourites {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-style: italic;
+  padding: 0.5rem;
+}
+
+/* ========================================
+   Results Section (Main Content)
+   ======================================== */
 .results-section {
   flex: 1;
   min-width: 0;
@@ -319,7 +368,9 @@ body {
   margin: 0.5rem 0;
 }
 
-/* Property Cards Grid */
+/* ========================================
+   Property Cards Grid
+   ======================================== */
 .properties-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -479,10 +530,27 @@ body {
   cursor: not-allowed;
 }
 
+/* ========================================
+   Responsive Design - Tablet
+   ======================================== */
+@media screen and (max-width: 1024px) {
+  .properties-content {
+    padding: 1.5rem;
+  }
+  
+  .search-sidebar {
+    flex: 0 0 280px;
+  }
+  
+  .properties-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+}
 
-
-/*
-   Responsive Design - Mobile  */
+/* ========================================
+   Responsive Design - Mobile
+   ======================================== */
 @media screen and (max-width: 768px) {
   .properties-header {
     padding: 2rem 1rem;
@@ -538,7 +606,9 @@ body {
   }
 }
 
-/* Responsive Design - Small Mobile*/
+/* ========================================
+   Responsive Design - Small Mobile
+   ======================================== */
 @media screen and (max-width: 480px) {
   .properties-header h1 {
     font-size: 1.75rem;
@@ -567,9 +637,9 @@ body {
   }
 }
 
-/*
+/* ========================================
    Print Styles
-   */
+   ======================================== */
 @media print {
   .search-sidebar,
   .property-actions,
@@ -588,7 +658,9 @@ body {
   }
 }
 
-
+/* ========================================
+   Accessibility Enhancements
+   ======================================== */
 button:focus,
 input:focus,
 select:focus {

@@ -1,28 +1,26 @@
-import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./Components/Home/HomePage";
+import Properties from "./Components/PropertiesPage/Properties";
+import Favorite from "./Components/PropertiesPage/Favorite";
 import NavBar from "./Components/Navbar/Navbar";
-import Properties from "./Components/propertiesPage/Properties";
-// import Property from "./components/properties_page/Property";
-// import Favorites from "./components/properties_page/Favorites"; 
-//import { FavoriteProvider } from "./Components/propertiesPage/FavoriteContext";
 import Footer from "./Components/Navbar/Footer";
-import Home from "./Components/home/HomePage"; 
-
 
 function App() {
   return (
     <BrowserRouter>
-      <FavoriteProvider>
+      <div className="app-container">
         <NavBar />
+        
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/properties_page" element={<Properties />} />
-          
-          
-          \
+          <Route path="/favourites" element={<Favorite />} />
+          {/* Add property detail route when you create that component */}
+          {/* <Route path="/property/:id" element={<PropertyDetail />} /> */}
         </Routes>
+        
         <Footer />
-      </FavoriteProvider>
+      </div>
     </BrowserRouter>
   );
 }

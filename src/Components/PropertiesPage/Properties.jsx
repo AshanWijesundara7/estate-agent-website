@@ -5,7 +5,6 @@ import './Properties.css';
 // Import local JSON data
 import propertiesData from '../../data/properties.json';
 
-
 const Properties = () => {
   const navigate = useNavigate();
   
@@ -29,17 +28,30 @@ const Properties = () => {
   
   // Load favourites from localStorage on mount
   useEffect(() => {
-    const storedFavourites = localStorage.getItem('propertyFavourites');
-    if (storedFavourites) {
-      setFavourites(JSON.parse(storedFavourites));
-    }
+    loadFavourites();
     // Initial display of all properties
     setFilteredProperties(propertiesData.properties);
   }, []);
   
+  // Load favourites from localStorage
+  const loadFavourites = () => {
+    const storedFavourites = localStorage.getItem('propertyFavourites');
+    if (storedFavourites) {
+      try {
+        const parsed = JSON.parse(storedFavourites);
+        setFavourites(parsed);
+      } catch (error) {
+        console.error('Error loading favourites:', error);
+        setFavourites([]);
+      }
+    }
+  };
+  
   // Save favourites to localStorage whenever they change
   useEffect(() => {
-    localStorage.setItem('propertyFavourites', JSON.stringify(favourites));
+    if (favourites.length > 0 || localStorage.getItem('propertyFavourites')) {
+      localStorage.setItem('propertyFavourites', JSON.stringify(favourites));
+    }
   }, [favourites]);
   
   // Handle form input changes
@@ -145,7 +157,10 @@ const Properties = () => {
   // Add property to favourites (prevent duplicates)
   const addToFavourites = (property) => {
     if (!favourites.find(fav => fav.id === property.id)) {
-      setFavourites(prev => [...prev, property]);
+      const updatedFavourites = [...favourites, property];
+      setFavourites(updatedFavourites);
+      // Show success feedback
+      alert('Property added to favourites!');
     }
   };
   
@@ -162,6 +177,11 @@ const Properties = () => {
   // Navigate to property detail page
   const viewProperty = (propertyId) => {
     navigate(`/property/${propertyId}`);
+  };
+  
+  // Navigate to favourites page
+  const goToFavourites = () => {
+    navigate('/favourites');
   };
   
   // Format price with commas and £ symbol
@@ -336,12 +356,22 @@ const Properties = () => {
           
           {/* Favourites Preview */}
           <div className="favourites-preview">
-            <h3>Favourites ({favourites.length})</h3>
+            <div className="favourites-preview-header">
+              <h3>Favourites ({favourites.length})</h3>
+              {favourites.length > 0 && (
+                <button 
+                  className="btn-view-all"
+                  onClick={goToFavourites}
+                >
+                  View All
+                </button>
+              )}
+            </div>
             {favourites.length === 0 ? (
               <p className="no-favourites">No favourites yet</p>
             ) : (
               <div className="favourites-list">
-                {favourites.map(fav => (
+                {favourites.slice(0, 3).map(fav => (
                   <div key={fav.id} className="favourite-item">
                     <div className="favourite-info">
                       <p className="favourite-price">{formatPrice(fav.price)}</p>
@@ -356,6 +386,11 @@ const Properties = () => {
                     </button>
                   </div>
                 ))}
+                {favourites.length > 3 && (
+                  <p className="more-favourites">
+                    +{favourites.length - 3} more
+                  </p>
+                )}
               </div>
             )}
           </div>
