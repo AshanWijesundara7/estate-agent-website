@@ -1,7 +1,3 @@
-/* ========================================
-   5COSC026W Properties Search & Results
-   Estate Agent SPA Stylesheet
-   ======================================== */
 
 /* CSS Reset and Base Styles */
 * {
@@ -37,9 +33,7 @@ body {
   line-height: 1.6;
 }
 
-/* ========================================
-   Header Section
-   ======================================== */
+/* Header Section*/
 .properties-header {
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
   color: white;
@@ -60,9 +54,7 @@ body {
   opacity: 0.9;
 }
 
-/* ========================================
-   Main Container Layout
-   ======================================== */
+/*Main Container Layout*/
 .properties-container {
   min-height: 100vh;
 }
@@ -75,9 +67,7 @@ body {
   gap: 2rem;
 }
 
-/* ========================================
-   Search Sidebar (Left Column)
-   ======================================== */
+/* Search Sidebar (Left Column)*/
 .search-sidebar {
   flex: 0 0 320px;
   display: flex;
@@ -101,9 +91,7 @@ body {
   padding-bottom: 0.5rem;
 }
 
-/* ========================================
-   Form Styling
-   ======================================== */
+/* Form Styling*/
 .search-form {
   display: flex;
   flex-direction: column;
@@ -223,9 +211,7 @@ body {
   background: #e9ecef;
 }
 
-/* ========================================
-   Favourites Preview Sidebar
-   ======================================== */
+/* Favourites Preview Sidebar*/
 .favourites-preview {
   background: var(--background-white);
   border-radius: 8px;
@@ -329,9 +315,7 @@ body {
   padding: 0.5rem;
 }
 
-/* ========================================
-   Results Section (Main Content)
-   ======================================== */
+/* Results Section (Main Content) */
 .results-section {
   flex: 1;
   min-width: 0;
@@ -368,9 +352,7 @@ body {
   margin: 0.5rem 0;
 }
 
-/* ========================================
-   Property Cards Grid
-   ======================================== */
+/* Property Cards Grid*/
 .properties-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -548,9 +530,7 @@ body {
   }
 }
 
-/* ========================================
-   Responsive Design - Mobile
-   ======================================== */
+/* Responsive Design - Mobile*/
 @media screen and (max-width: 768px) {
   .properties-header {
     padding: 2rem 1rem;
@@ -606,9 +586,7 @@ body {
   }
 }
 
-/* ========================================
-   Responsive Design - Small Mobile
-   ======================================== */
+/* Responsive Design - Small Mobile */
 @media screen and (max-width: 480px) {
   .properties-header h1 {
     font-size: 1.75rem;
@@ -637,9 +615,7 @@ body {
   }
 }
 
-/* ========================================
-   Print Styles
-   ======================================== */
+/* Print Styles */
 @media print {
   .search-sidebar,
   .property-actions,
@@ -658,9 +634,7 @@ body {
   }
 }
 
-/* ========================================
-   Accessibility Enhancements
-   ======================================== */
+/* Accessibility Enhancements*/
 button:focus,
 input:focus,
 select:focus {
