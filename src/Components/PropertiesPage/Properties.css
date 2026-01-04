@@ -103,7 +103,7 @@
   background: linear-gradient(to right, #4da6ff 0%, #4da6ff 100%);
   border-radius: 3px;
   outline: none;
-  -webkit-appearance: none;
+  
 }
 
 .price-slider::-webkit-slider-thumb {
