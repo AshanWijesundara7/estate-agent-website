@@ -44,4 +44,3 @@ describe("Favorites Page", () => {
     }
   });
 });
-g
