@@ -11,11 +11,11 @@ const Homepage = () => {
         <div className="hero-content">
           <h1>Find Your Dream Home!</h1>
           <p>Discover properties that match your lifestyle and needs.</p>
-          <button onClick={() => navigate("/properties_page")}>Buy</button>
+          <button onClick={() => navigate("/properties")}>Buy</button>
         </div>
       </section>
         <div className="section-title">
-        <div class="content">
+        <div className="content">
           <h2>
             What We Offer
           </h2>
@@ -38,9 +38,9 @@ const Homepage = () => {
 
           <h3>Buy a home</h3>
           <p>
-            Find your place with immersive photos and the most listings, including ones you won’t find elsewhere.
+            Find your place with immersive photos and the most listings, including ones you won't find elsewhere.
           </p>
-          <button onClick={() => navigate("/properties_page")}>Browse homes</button>
+          <button onClick={() => navigate("/properties")}>Browse homes</button>
 
         </div>
 
