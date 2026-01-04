@@ -99,8 +99,6 @@ const Properties = () => {
             <option value="House">House</option>
             <option value="Flat">Flat</option>
             <option value="Apartment">Apartment</option>
-            <option value="Maisonette">Maisonette</option>
-            <option value="Townhouse">Townhouse</option>
           </select>
         </div>
 
