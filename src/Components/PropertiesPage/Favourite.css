@@ -1,10 +1,113 @@
+/* Favorites Layout */
+.favorites-container {
+  position: relative;
+}
+
+.favorites-layout {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+.favorites-main {
+  flex: 1;
+}
+
+/* Draggable Card Styling */
+.draggable-card {
+  cursor: move;
+  user-select: none;
+  transition: all 0.3s ease !important;
+}
+
+.draggable-card:hover {
+  cursor: grab;
+}
+
+.draggable-card:active {
+  cursor: grabbing;
+}
+
+/* Remove Drop Zone */
+.remove-drop-zone {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 180px;
+  height: 200px;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+  border: 3px dashed rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(238, 90, 111, 0.3);
+  z-index: 1000;
+}
+
+.remove-drop-zone h3 {
+  font-size: 1.2em;
+  margin: 15px 0 8px 0;
+  font-weight: 700;
+}
+
+.remove-drop-zone p {
+  font-size: 0.85em;
+  margin: 0;
+  padding: 0 15px;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.remove-drop-zone.drag-over {
+  background: linear-gradient(135deg, #ff5252 0%, #f44336 100%);
+  border-color: white;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 15px 40px rgba(238, 90, 111, 0.5);
+}
+
+.trash-icon {
+  font-size: 3em;
+  animation: bounce 2s infinite;
+}
+
+.remove-drop-zone.drag-over .trash-icon {
+  animation: shake 0.5s;
+}
+
+/* Animations */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+}
+
+/* Placeholder Container */
 .placeholder-container {
   text-align: center; 
   margin-top: 80px; 
   animation: slideUp 0.6s ease-out; 
 }
 
-/* Placeholder image styling */
 .placeholder-container img {
   max-width: 350px; 
   width: 100%;
@@ -20,7 +123,6 @@
   transform: translateY(-5px);
 }
 
-/* Placeholder message styling */
 .placeholder-container p {
   font-size: 17px; 
   color: #6b7280; 
@@ -29,7 +131,6 @@
   letter-spacing: 0.3px;
 }
 
-/* Placeholder button styling */
 .placeholder-container .btn {
   padding: 14px 32px; 
   font-size: 15px;
@@ -43,13 +144,11 @@
   letter-spacing: 0.5px;
 }
 
-/* Button hover effect */
 .placeholder-container .btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
 }
 
-/* Animation for slide-up effect */
 @keyframes slideUp {
   from {
     opacity: 0; 
@@ -61,7 +160,7 @@
   }
 }
 
-/* Property card enhancements */
+/* Property Card Enhancements */
 .card {
   border: none !important;
   border-radius: 16px !important;
@@ -116,8 +215,8 @@
   box-shadow: 0 4px 15px rgba(245, 87, 108, 0.3) !important;
 }
 
-/* Page header styling */
-.container h2 {
+/* Page Header Styling */
+.favorites-container h2 {
   font-size: 2.2em;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;
@@ -126,20 +225,17 @@
   margin-bottom: 10px;
 }
 
-/* Favorites count styling */
-.container > div > p {
+.favorites-container > div > p {
   color: #6b7280 !important;
   font-size: 1.05em;
 }
 
-/* Card text description */
 .card-text {
   color: #6b7280 !important;
   line-height: 1.6;
   font-size: 0.88em !important;
 }
 
-/* Heart icon container */
 .btn-danger:last-child {
   background: transparent !important;
   border: 2px solid #f5576c !important;
@@ -150,7 +246,45 @@
   background: #f5576c !important;
 }
 
-/* Smooth transitions for all elements */
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .remove-drop-zone {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin: 20px auto;
+    max-width: 400px;
+  }
+
+  .remove-drop-zone.drag-over {
+    transform: scale(1.05);
+  }
+
+  .favorites-layout {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .remove-drop-zone {
+    width: 90%;
+    height: 150px;
+  }
+
+  .remove-drop-zone h3 {
+    font-size: 1em;
+  }
+
+  .remove-drop-zone p {
+    font-size: 0.75em;
+  }
+
+  .trash-icon {
+    font-size: 2em;
+  }
+}
+
+/* Smooth Transitions */
 * {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
