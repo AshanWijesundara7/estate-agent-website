@@ -6,7 +6,7 @@
             "bedrooms":3,
 			"price":750000,
 			"tenure":"Freehold",
-			"description":"Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
+			"description":"Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior throughout with neutral décor.",
 			"location":"Petts Wood Road, Petts Wood, Orpington BR5",
 			"picture":"images/prop1/p11.png",   
             "pictures":["/images/prop1/p11.png", 
@@ -15,15 +15,15 @@
                         "/images/prop1/p14.png",
                         "/images/prop1/p15.png",
                         "/images/prop1/p16.png"
-            ],                 
+            ],
+            "postalCode":"BR5",                 
 			"url":"properties/prop1.html",
             "added": {
                 "month":"October",
                 "day":12,
                 "year":2022
-            }
-            
-          
+            },
+            "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.5!2d0.0745!3d51.3926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDIzJzMzLjQiTiAwwrAwNCcyOC4yIkU!5e0!3m2!1sen!2suk!4v1234567890"
         },
 		{
             "id":"prop2",
@@ -31,7 +31,7 @@
             "bedrooms":2,
 			"price":399995,
 			"tenure":"Freehold",
-			"description":"Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
+			"description":"Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher and a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV and aerial points in the living room, kitchen and both bedrooms. This apartment being only five years old, is still under a 10 year building guarantee.",
 			"location":"Crofton Road Orpington BR6",
 			"picture":"images/prop2/p21.png",
             "pictures":["/images/prop2/p21.png", 
@@ -40,12 +40,141 @@
                         "/images/prop2/p24.png",
                         "/images/prop2/p25.png",
                         "/images/prop2/p26.png"
-            ],  
+            ],
+            "postalCode":"BR6",  
 			"url":"properties/prop2.html",
             "added": {
                 "month":"September",
                 "day":14,
                 "year":2022
-            }
+            },
+            "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2489.1!2d0.0989!3d51.3856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDIzJzA4LjIiTiAwwrAwNSczMC4wIkU!5e0!3m2!1sen!2suk!4v1234567891"
+        },
+        {
+            "id":"prop3",
+			"type":"Apartment",
+            "bedrooms":1,
+			"price":285000,
+			"tenure":"Leasehold",
+			"description":"This stunning one bedroom apartment is located on the fourth floor of a modern development in the heart of Greenwich. The property features a spacious open plan living area with floor to ceiling windows offering breathtaking views of the Thames. The contemporary kitchen comes fully equipped with high-end integrated appliances including an induction hob, oven, and fridge freezer. The generously sized bedroom includes built-in wardrobes and an en-suite shower room. Additional benefits include secure underground parking, 24-hour concierge service, a residents' gym, and excellent transport links with North Greenwich station just a short walk away.",
+			"location":"Greenwich Peninsula, London SE10",
+			"picture":"images/prop3/p31.png",
+            "pictures":["/images/prop3/p31.png", 
+                        "/images/prop3/p32.png",
+                        "/images/prop3/p33.png",
+                        "/images/prop3/p34.png",
+                        "/images/prop3/p35.png",
+                        "/images/prop3/p36.png"
+            ],
+            "postalCode":"SE10",  
+			"url":"properties/prop3.html",
+            "added": {
+                "month":"November",
+                "day":5,
+                "year":2023
+            },
+            "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.2!2d0.0037!3d51.5007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDMwJzAyLjUiTiAwwrAwMCcxMy4zIkU!5e0!3m2!1sen!2suk!4v1234567892"
+        },
+        {
+            "id":"prop4",
+			"type":"House",
+            "bedrooms":5,
+			"price":800000,
+			"tenure":"Freehold",
+			"description":"An exceptional five bedroom detached family home set on a private road in the prestigious Chislehurst area. This impressive property spans three floors and offers versatile accommodation throughout. The ground floor features a grand entrance hall, a spacious living room with feature fireplace, separate dining room, modern kitchen breakfast room with bi-fold doors leading to the garden, and a utility room. The first floor comprises four double bedrooms including a master suite with walk-in wardrobe and en-suite bathroom, plus a family bathroom. The second floor offers a fifth bedroom perfect as a guest room or home office. Outside, the property boasts a landscaped rear garden with patio area, double garage, and driveway parking for multiple vehicles.",
+			"location":"Chislehurst Road, Chislehurst BR7",
+			"picture":"images/prop4/p41.png",
+            "pictures":["/images/prop4/p41.png", 
+                        "/images/prop4/p42.png",
+                        "/images/prop4/p43.png",
+                        "/images/prop4/p44.png",
+                        "/images/prop4/p45.png",
+                        "/images/prop4/p46.png"
+                        
+            ],
+            "postalCode":"BR7",  
+			"url":"properties/prop4.html",
+            "added": {
+                "month":"January",
+                "day":20,
+                "year":2024
+            },
+            "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2489.8!2d0.0634!3d51.4159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDI0JzU3LjIiTiAwwrAwMycxNC4xIkU!5e0!3m2!1sen!2suk!4v1234567893"
+        },
+        {
+            "id":"prop5",
+			"type":"Flat",
+            "bedrooms":3,
+			"price":525000,
+			"tenure":"Leasehold",
+			"description":"A beautifully presented three bedroom split level apartment situated in a converted Victorian building in Bromley town centre. This unique property offers bright and spacious accommodation arranged over two floors. The entrance level features a modern fitted kitchen with breakfast bar, a large reception room with original period features including high ceilings and sash windows, and a guest WC. Upstairs are three well-proportioned bedrooms and a luxury family bathroom with roll-top bath. The property benefits from wood flooring throughout, gas central heating, double glazing, and a private balcony overlooking communal gardens. Located within walking distance of Bromley South station with excellent shopping facilities and restaurants nearby.",
+			"location":"High Street, Bromley BR1",
+			"picture":"images/prop5/p51.png",
+            "pictures":["/images/prop5/p51.png", 
+                        "/images/prop5/p52.png",
+                        "/images/prop5/p53.png",
+                        "/images/prop5/p54.png",
+                        "/images/prop5/p55.png",
+                        "/images/prop5/p56.png"
+            ],
+            "postalCode":"BR1",  
+			"url":"properties/prop5.html",
+            "added": {
+                "month":"March",
+                "day":8,
+                "year":2024
+            },
+            "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.9!2d0.0167!3d51.4058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDI0JzIwLjkiTiAwwrAwMScwMC4xIkU!5e0!3m2!1sen!2suk!4v1234567894"
+        },
+        {
+            "id":"prop6",
+			"type":"House",
+            "bedrooms":4,
+			"price":895000,
+			"tenure":"Freehold",
+			"description":"This superb four bedroom extended family home is situated in a quiet residential area of West Wickham with excellent local schools nearby. The property has been significantly improved by the current owners and now offers spacious modern accommodation. The ground floor comprises an entrance hall, guest cloakroom, dual aspect living room, separate dining room, and a stunning open plan kitchen family room with skylights and bi-fold doors opening onto the garden. Upstairs are four bedrooms with the master bedroom benefiting from fitted wardrobes and an en-suite shower room, plus a modern family bathroom. The property features a south-facing landscaped garden, side access, and a driveway providing off-street parking. Additional features include underfloor heating, oak flooring, and a home office.",
+			"location":"Village Way, West Wickham BR4",
+			"picture":"images/prop6/p61.png",
+            "pictures":["/images/prop6/p61.png", 
+                        "/images/prop6/p62.png",
+                        "/images/prop6/p63.png",
+                        "/images/prop6/p64.png",
+                        "/images/prop6/p65.png",
+                        "/images/prop6/p66.png"
+            ],
+            "postalCode":"BR4",  
+			"url":"properties/prop6.html",
+            "added": {
+                "month":"June",
+                "day":15,
+                "year":2024
+            },
+            "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2490.5!2d-0.0156!3d51.3776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDIyJzM5LjQiTiAwwrAwMCc1Ni4yIlc!5e0!3m2!1sen!2suk!4v1234567895"
+        },
+        {
+            "id":"prop7",
+			"type":"Apartment",
+            "bedrooms":2,
+			"price":475000,
+			"tenure":"Leasehold",
+			"description":"A luxury two bedroom apartment located on the third floor of an exclusive gated development in Beckenham. This contemporary property offers high specification accommodation with a bright and airy open plan living kitchen dining area featuring integrated Bosch appliances, Quartz worktops, and access to a private balcony with views over landscaped communal gardens. There are two double bedrooms with the master bedroom having an en-suite shower room, plus a stylish family bathroom. The apartment includes secure video entry system, allocated underground parking space, bicycle storage, and access to communal gardens. Perfectly positioned close to Beckenham Junction station offering fast trains to London Victoria and within easy reach of local amenities and parks.",
+			"location":"Beckenham Road, Beckenham BR3",
+			"picture":"images/prop7/p71.png",
+            "pictures":["/images/prop7/p71.png", 
+                        "/images/prop7/p72.png",
+                        "/images/prop7/p73.png",
+                        "/images/prop7/p74.png",
+                        "/images/prop7/p75.png",
+                        "/images/prop7/p76.png"
+            ],
+            "postalCode":"BR3",  
+			"url":"properties/prop7.html",
+            "added": {
+                "month":"August",
+                "day":22,
+                "year":2024
+            },
+            "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2489.3!2d-0.0254!3d51.4088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDI0JzMxLjciTiAwwrAwMScyOS40Ilc!5e0!3m2!1sen!2suk!4v1234567896"
         }
-]}
+    ]
+}
