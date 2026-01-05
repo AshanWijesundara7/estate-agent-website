@@ -1,6 +1,6 @@
 /* Properties Page Container */
 .properties-page {
-  font-family: 'Raleway', sans-serif;
+  font-family:'Times New Roman', Times, serif;
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   min-height: 100vh;
 }
